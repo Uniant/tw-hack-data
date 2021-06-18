@@ -55,6 +55,10 @@ var modal_html = (function() {/*
         <a href="#" class="modal-close">×</a>
       </div>
     </div>
+        */}).toString().match(/[^]*\/\*([^]*)\*\/\}$/)[1].replace(/\n|\r/g, ""); //改行するためにこうしている
+
+//モーダルウィンドウのcss
+var modal_css = (function() {/*
     <style>
     
     .btn {
@@ -162,6 +166,11 @@ var modal_html = (function() {/*
        if(app_info.indexOf(n_list[i]) != -1){ //乗っ取りアプリの名前が含まれてたら
            //警告（モーダルウィンドウ）
            document.body.innerHTML += modal_html //サイトにモーダルウィンドウのhtmlを突っ込む
+
+           var mc = document.createElement("style") //サイトにモーダルウィンドウのcssを突っ込む
+           mc.innerHTML = modal_css
+           document.body.appendChild(mc)
+
            location.href="#m" //モーダルウィンドウを表示
        }
     }
