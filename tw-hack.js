@@ -54,6 +54,7 @@ var n_list = ["あなたの価値早見表",
 "TWILOG202",
 "人気ツイートタイム！",
 "JAPSNS",
+"Roun' Year Fun!",
 "twitter.com/",]
     
     
