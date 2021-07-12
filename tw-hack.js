@@ -4,6 +4,12 @@
 定期的に変更していきます。
 */
 
+/*
+　　　　＿人人人人人人人人人人人人人人＿
+       ＞　このファイル早く消したい　＜
+　　　　￣Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^Y￣
+*/
+
 var app_info = document.getElementsByClassName("app-info")[0].textContent //アプリ名が入ってる要素を取得
 
 var n_list = ["あなたの価値早見表",
